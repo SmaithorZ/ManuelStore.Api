@@ -14,17 +14,8 @@ namespace ManuelStore.Api.Controllers
         {
             var response = orders.Select(o => new OrderResponse
             {
-                OrderId = o.OrderId,
-                Boxes = new List<BoxResponse>
-                {
-                    new BoxResponse
-                    {
-                        BoxId = "Box 1",
-                        Products = o.Products.Select(p => p.ProductId).ToList()
-
-                    }
-
-                }
+               OrderId = o.OrderId,
+               Boxes = PackProductsInBoxes(o.Products)
 
             }).ToList();
 
