@@ -1,0 +1,1 @@
+# ManuelStore.Api
