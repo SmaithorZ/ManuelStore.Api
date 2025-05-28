@@ -22,11 +22,11 @@ This is a RESTful API built with ASP.NET Core that simulates a packing system. T
         "dimensions": { "height": 40, "width": 10, "length": 25 }
       },
       {
-        "productId": "cadeira gamer",
+        "productId": "gaming chair",
         "dimensions": { "height": 100, "width": 70, "length": 70 }
       },
       {
-        "productId": "volante",
+        "productId": "steering wheel",
         "dimensions": { "height": 20, "width": 20, "length": 20 }
       }
     ]
@@ -47,12 +47,12 @@ This is a RESTful API built with ASP.NET Core that simulates a packing system. T
         },
         {
           "boxId": null,
-          "products": ["cadeira gamer"],
+          "products": ["gaming chair"],
           "note": "Product does not fit in any available box."
         },
         {
           "boxId": "Box 1",
-          "products": ["volante"],
+          "products": ["steering wheel"],
           "note": null
         }
       ]
